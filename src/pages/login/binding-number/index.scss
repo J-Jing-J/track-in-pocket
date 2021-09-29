@@ -1,0 +1,172 @@
+@import "../../../styles/variables";
+
+//NavigationBar
+.navigation-bar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 88px;
+  width: 375px;
+  background-color: $color-primary;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  .navigation-bar-return-icon {
+    background-image: url("../../../assets/icons/navigation-return.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-top: 54px;
+    margin-left: 16px;
+    background-size: 100% 100%;
+    text-align: center;
+    width: 12px;
+    height: 24px;
+  }
+  .navigation-bar-logo {
+    background-image: url("../../../assets/logo/logo.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-top: 44px;
+    margin-left: 131px;
+    background-size: 100% 100%;
+    text-align: center;
+    width: 58px;
+    height: 39px;
+  }
+}
+
+
+.page-section {
+  width: 100%;
+  height: 100vh;
+}
+
+.binding-number {
+  background-image: url("../../../assets/img/login-background.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% auto;
+  background-color: $color-primary;
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.enter-card-container {
+  background-image: url("../../../assets/img/login-card-bg.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  margin-left: 50%;
+  transform: translate(-50%);
+  margin-top: 150px;
+  width: 327px;
+  height: 348px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.enter-card-title-container {
+  margin-top: 0;
+  margin-left: 50%;
+  transform: translate(-50%);
+  width: 100%;
+  height: 65px;
+  display: flex;
+}
+.enter-card-title-item {
+  flex: 1;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% auto;
+  margin-top: 23px;
+  width: 54px;
+  height: 31px;
+}
+.enter-card-title-item:nth-child(1) {
+  background-image: url("../../../assets/icons/login-hover-icon.png");
+}
+.enter-card-title-item:nth-child(2) {
+  background-image: url("../../../assets/icons/register-icon.png");
+}
+
+.enter-form {
+  margin-top: 0;
+  margin-left: 50%;
+  transform: translate(-50%);
+  width: 327px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.step-show {
+  background-image: url("../../../assets/img/step1.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  margin-left: 50%;
+  transform: translate(-50%);
+  height: 19px;
+}
+.enter-form-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.enter-form-item-text {
+  color: $color-primary;
+  margin-left: 0px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 22px;
+}
+.enter-form-item-input {
+  flex: 1;
+  background-color: $color-title-bg;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  width: 212px;
+  height: 46px;
+  border-radius: 10px;
+  font-size: 13px;
+}
+
+.forget-password-link {
+  color: $color-primary;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  margin-top: 2px;
+  width: 65px;
+  height: 18px;
+  float: right;
+}
+.submit-button {
+  //background: linear-gradient(134deg, #FAD565 0%, #F7BC28 100%);
+  background: rgba(220,38,38,0);;
+  //box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.16);
+  height: 85px;
+  width: 85px;
+  color: $color-bg;
+  border-radius: 50%;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

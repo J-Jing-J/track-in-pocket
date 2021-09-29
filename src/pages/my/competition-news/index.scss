@@ -1,0 +1,351 @@
+@import "../../../styles/variables";
+
+//NavigationBar
+.navigation-bar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 168px;
+  width: 375px;
+  background-color: $color-primary;
+  border-radius: 0 0 46px 46px;
+  margin-top: 88px;
+  .navigation-bar-top-container {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 88px;
+    width: 375px;
+    background-color: $color-primary;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    .navigation-bar-return-icon {
+      background-image: url("../../../assets/icons/navigation-return.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+      margin-top: 54px;
+      margin-left: 16px;
+      background-size: 100% 100%;
+      text-align: center;
+      width: 12px;
+      height: 24px;
+    }
+    .navigation-bar-logo {
+      background-image: url("../../../assets/logo/logo.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+      margin-top: 44px;
+      margin-left: 131px;
+      background-size: 100% 100%;
+      text-align: center;
+      width: 58px;
+      height: 39px;
+    }
+  }
+  .my-information-card {
+    width: 332px;
+    height: 151px;
+    background: #FFFFFF;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    border-radius: 10px;
+    margin-left: 50%;
+    transform: translate(-50%);
+    margin-top: 25px;
+    .name-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      width: 332px;
+    }
+    .my-avatars {
+      width: 71px;
+      height: 71px;
+      border: 2px solid #FFFFFF;
+      box-shadow: -3px 3px 7px rgba(41, 58, 86, 0.16);
+      border-radius: 50%;
+      background-image: url("../../../assets/avatars/zd-avatars.jpg");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 100% 100%;
+      margin-left: 27px;
+      margin-top: -18px;
+    }
+    .my-name {
+      font-size: 17px;
+      font-weight: bold;
+      line-height: 24px;
+      color: #1E2948;
+      margin-left: 4px;
+      margin-top: 18px;
+      text-align: left;
+      height: 24px;
+      width: 120px;
+      overflow: hidden;
+    }
+    .my-modify-data-button {
+      width: 75px;
+      height: 30px;
+      background: #4F75B3;
+      border-radius: 35px;
+      font-size: 10px;
+      font-weight: 500;
+      line-height: 14px;
+      color: #FFFFFF;
+      text-align: center;
+      box-sizing: border-box;
+      margin-left: 14px;
+      margin-top: 13px;
+      padding-top: 8px;
+    }
+    .my-information-container {
+      margin-top: 20px;
+      height: 69px;
+      display: flex;
+      flex-direction: row;
+      .my-information-item {
+        flex: 1;
+        width: 30%;
+        height: 69px;
+        border-right: 1px solid #C3C3C3;
+        .my-information-icon {
+          background-image: url("../../../assets/icons/my-information-card-icon1.png");
+          background-repeat: no-repeat;
+          background-position: center center;
+          margin-top: 5px;
+          margin-left: 50%;
+          transform: translate(-50%);
+          background-size: 100% 100%;
+          z-index: 2;
+          text-align: center;
+          width: 32px;
+          height: 32px;
+        }
+        .my-information-icon:nth-child(2) {
+          background-image: url("../../../assets/icons/my-information-card-icon2.png");
+        }
+        .my-information-icon:nth-child(3) {
+          background-image: url("../../../assets/icons/my-information-card-icon3.png");
+        }
+        .my-information-text {
+          height: 17px;
+          font-size: 12px;
+          font-weight: bold;
+          line-height: 17px;
+          color: #1E2948;
+          text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+          text-align: center;
+          margin-top: 8px;
+        }
+      }
+      .my-information-item:last-child {
+        border-right: none;
+      }
+    }
+  }
+}
+
+.page-section {
+  width: 100%;
+  height: 100vh;
+}
+//TabBar
+.foot-tab-bar {
+  display: flex;
+  background-color: $sidebar-bottom-color;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 81px;
+  width: 100%;
+  box-shadow: 0px 2px 28px rgba(0, 0, 0, 0.13);
+  border-radius: 28px 28px 0px 0px;
+  z-index: 1;
+  .foot-tab-bar-item {
+    flex: 1;
+    text-align: center;
+    font-size: $f8;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.menu-icon {
+  background-image: url("../../../assets/img/tabbar-icon1.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  height: 35px;
+  width: 35px;
+  text-align: center;
+  margin-top: 10px;
+}
+.menu-text {
+  color: $color-title;
+  font-size: 10px;
+  width: 20px;
+  height: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  text-align: center;
+  margin-top: 5%;
+}
+.foot-tab-bar-item:nth-child(2) > .menu-icon {
+  background-image: url("../../../assets/img/tabbar-icon1.png");
+}
+.foot-tab-bar-item:nth-child(2) > .menu-icon {
+  background-image: url("../../../assets/img/tabbar-icon2.png");
+}
+.foot-tab-bar-item:nth-child(3) > .menu-icon {
+  background-image: url("../../../assets/img/tabbar-icon3.png");
+}
+.foot-tab-bar-item:nth-child(4) > .menu-icon {
+  background-image: url("../../../assets/img/tabbar-icon4.png");
+}
+.foot-tab-bar-item-hover {
+  .menu-icon {
+    background-image: url("../../../assets/img/tabbar-icon4-hover.png") !important;
+    height: 44px;
+    width: 44px;
+    margin-top: 3px!important;
+  }
+  .menu-text {
+    color: $color-primary;
+    width: 20px;
+    height: 14px;
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 14px;
+  }
+}
+
+//整体页面
+.discover {
+  background-color: $color-bg;
+}
+
+.page-section-spacing{
+  margin-top: 0;
+  text-align: center;
+  margin-bottom: 87px;
+}
+.scroll-view {
+  height: 100%;
+}
+.scroll-view-item{
+  height: 100%;
+}
+
+
+.mid-bar-container {
+  width: 314px;
+  height: 42px;
+  background: #E4E4E4;
+  border-radius: 25px;
+  margin-top: 286px;
+  margin-left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  .mid-bar-item {
+    width: 105px;
+    height: 42px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #999999;
+    text-align: center;
+    padding-top: 11px;
+    box-sizing: border-box;
+  }
+  .mid-bar-item-active {
+    background: #F7AD05;
+    border-radius: 25px;
+    color: #FFFFFF;
+  }
+}
+
+.competition-list-container {
+  width: 332px;
+  background-color: $color-bg;
+  margin-top: 14px;
+  margin-left: 50%;
+  transform: translate(-50%);
+  .competition-list-item {
+    height: 145px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.11);
+    border-radius: 10px;
+    margin-top: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+    .competition-theme-picture {
+      background-image: url("../../../assets/img/sign-up-poster1.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 100% 100%;
+      width: 77px;
+      height: 120px;
+      border-radius: 5px;
+      margin-left: 12px;
+      margin-top: 16px;
+    }
+    .competition-theme-text-container {
+      width: 205px;
+      height: 110px;
+      margin-left: 15px;
+      margin-top: 17px;
+      .competition-theme-title {
+        height: 24px;
+        font-size: 17px;
+        font-weight: bold;
+        line-height: 24px;
+        color: #333333;
+        display: block;
+        text-align: left;
+      }
+      .competition-theme-content {
+        height: 34px;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 17px;
+        color: #999999;
+        overflow: hidden;
+        display: block;
+        text-align: left;
+        margin-top: 5px;
+      }
+      .competition-theme-deadline {
+        height: 14px;
+        font-size: 12px;
+        font-weight: bold;
+        line-height: 14px;
+        color: #333333;
+        overflow: hidden;
+        display: block;
+        text-align: left;
+        margin-top: 8px;
+      }
+      .competition-theme-organizer {
+        height: 14px;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 14px;
+        color: #333333;
+        overflow: hidden;
+        display: block;
+        text-align: left;
+        margin-top: 4px;
+      }
+    }
+  }
+}

@@ -1,0 +1,303 @@
+@import "../../../styles/variables";
+
+//NavigationBar
+.navigation-bar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 88px;
+  width: 375px;
+  background-color: $color-primary;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  .navigation-bar-return-icon {
+    background-image: url("../../../assets/icons/navigation-return.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-top: 54px;
+    margin-left: 16px;
+    background-size: 100% 100%;
+    text-align: center;
+    width: 12px;
+    height: 24px;
+  }
+  .navigation-bar-logo {
+    background-image: url("../../../assets/logo/logo.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-top: 44px;
+    margin-left: 131px;
+    background-size: 100% 100%;
+    text-align: center;
+    width: 58px;
+    height: 39px;
+  }
+}
+
+
+//TabBar
+.foot-tab-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $sidebar-bottom-color;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 98px;
+  width: 100%;
+  box-shadow: 0px 2px 28px rgba(0, 0, 0, 0.13);
+  border-radius: 28px 28px 0px 0px;
+  z-index: 1;
+}
+
+
+.cancel-button {
+  width: 129px;
+  height: 48px;
+  background: $color-blue-button;
+  opacity: 1;
+  border-radius: 100px;
+  color: $color-bg;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  line-height: 28px;
+}
+.next-step-button {
+  width: 177px;
+  height: 48px;
+  opacity: 1;
+  border-radius: 100px;
+  background-color: $color-yellow-button;
+  color: $color-bg;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+
+.page-section {
+  width: 100%;
+  height: 100vh;
+}
+
+//整体页面
+.discover {
+  background-color: $color-bg-bottom;
+}
+
+.page-section-spacing{
+  margin-top: 0;
+  text-align: center;
+  height: 107px;
+}
+.scroll-view {
+  height: 100vh;
+  max-height: 300vh;
+  width: 344px;
+  margin-left: 50%;
+  transform: translate(-50%);
+  overflow: scroll;
+  margin-bottom: 108px;
+}
+
+
+.step-show {
+  margin-top: 103px;
+  background-image: url("../../../assets/img/step1.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  margin-left: 50%;
+  transform: translate(-50%);
+  width: 92px;
+  height: 20px;
+}
+
+.form-title {
+  width: 100%;
+  height: 28px;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 28px;
+  color: #000000;
+  text-align: left;
+  margin-top: 18px;
+  display: block;
+}
+
+.competition-information-container {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  margin-top: 16px;
+  .competition-information {
+    flex: 1;
+    height: 100%;
+    background: #E4E4E4;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.16);
+    opacity: 1;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #000000;
+    padding-top: 9px;
+    box-sizing: border-box;
+  }
+  .competition-information:nth-child(2) {
+    margin-left: 19px;
+  }
+}
+
+
+//共同表单样式
+.form-input {
+  height: 40px;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.16);
+  opacity: 1;
+  border-radius: 10px;
+  text-align: left;
+  padding-left: 16px;
+  box-sizing: border-box;
+  margin-top: 12px;
+}
+.input-container {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  .title-input {
+    width: 340px;
+  }
+  .team-input {
+    width: 340px;
+  }
+  .teacher-name-input {
+    width: 184px;
+  }
+  .teacher-company-input {
+    width: 340px;
+  }
+}
+
+.tip-container {
+  width: 100%;
+  height: 14px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: center;
+  margin-top: 14px;
+  .tip-icon {
+    width: 15px;
+    height: 15px;
+    background-image: url("../../../assets/icons/tip.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    text-align: center;
+    margin-left: 11px;
+  }
+  .tip {
+    height: 14px;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
+    color: #C93B3B;
+    margin-left: 2px;
+  }
+}
+
+.add-author-container {
+  margin-top: 20px;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: flex-start;
+  .add-author-icon {
+    width: 30px;
+    height: 30px;
+    background-image: url("../../../assets/icons/add.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    border-radius: 50%;
+  }
+  .add-author-text {
+    height: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 25px;
+    color: #FEB70F;
+    margin-left: 10px;
+  }
+}
+
+.more-author-container {
+  margin-top: 23px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  .more-author-top {
+    width: 100%;
+    height: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    .more-author-number {
+      height: 24px;
+      font-size: 17px;
+      font-weight: bold;
+      line-height: 24px;
+      color: #000000;
+    }
+    .more-author-delete {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22px;
+      color: #C93B3B;
+    }
+  }
+  .more-author-input-container {
+    width: 100%;
+    margin-top: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    .more-author-short-input-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .more-author-input {
+        width: 164px;
+      }
+    }
+
+  }
+
+
+}
+
+

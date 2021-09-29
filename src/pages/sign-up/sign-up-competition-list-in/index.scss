@@ -1,0 +1,315 @@
+@import "../../../styles/variables";
+
+//NavigationBar
+.navigation-bar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 88px;
+  width: 375px;
+  background-color: $color-primary;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  .navigation-bar-return-icon {
+    background-image: url("../../../assets/icons/navigation-return.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-top: 54px;
+    margin-left: 16px;
+    background-size: 100% 100%;
+    text-align: center;
+    width: 12px;
+    height: 24px;
+  }
+  .navigation-bar-logo {
+    background-image: url("../../../assets/logo/logo.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-top: 44px;
+    margin-left: 131px;
+    background-size: 100% 100%;
+    text-align: center;
+    width: 58px;
+    height: 39px;
+  }
+}
+
+//TabBar
+.foot-tab-bar {
+  display: flex;
+  background-color: $sidebar-bottom-color;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 81px;
+  width: 100%;
+  box-shadow: 0px 2px 28px rgba(0, 0, 0, 0.13);
+  border-radius: 28px 28px 0px 0px;
+  z-index: 1;
+  .foot-tab-bar-item {
+    flex: 1;
+    text-align: center;
+    font-size: $f8;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.menu-icon {
+  background-image: url("../../../assets/img/tabbar-icon1.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  height: 35px;
+  width: 35px;
+  text-align: center;
+  margin-top: 10px;
+}
+.menu-text {
+  color: $color-title;
+  font-size: 10px;
+  width: 20px;
+  height: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  text-align: center;
+  margin-top: 5%;
+}
+.foot-tab-bar-item:nth-child(2) > .menu-icon {
+  background-image: url("../../../assets/img/tabbar-icon1.png");
+}
+.foot-tab-bar-item:nth-child(2) > .menu-icon {
+  background-image: url("../../../assets/img/tabbar-icon2.png");
+}
+.foot-tab-bar-item:nth-child(3) > .menu-icon {
+  background-image: url("../../../assets/img/tabbar-icon3.png");
+}
+.foot-tab-bar-item:nth-child(4) > .menu-icon {
+  background-image: url("../../../assets/img/tabbar-icon4.png");
+}
+.foot-tab-bar-item-hover {
+  .menu-icon {
+    background-image: url("../../../assets/img/tabbar-icon2-hover.png") !important;
+    height: 44px;
+    width: 44px;
+    margin-top: 3px!important;
+  }
+  .menu-text {
+    color: $color-primary;
+    width: 20px;
+    height: 14px;
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 14px;
+  }
+}
+
+
+
+
+.page-section {
+  width: 100%;
+  height: 100vh;
+}
+
+//整体页面
+.discover {
+  background-color: $color-bg-bottom;
+}
+
+.page-section-spacing{
+  margin-top: 0;
+  text-align: center;
+  height: 98px;
+}
+.scroll-view {
+  height: 100vh;
+  width: 347px;
+  margin-left: 50%;
+  transform: translate(-50%);
+  margin-bottom: 87px;
+}
+
+
+
+//轮播图
+.discover-swiper {
+  margin-top: 96px;
+  margin-left: 50%;
+  transform: translate(-50%);
+  width: 336px;
+  height: 125px;
+  border-radius: 10px;
+  background: #DDDDDD;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.1);
+  .discover-swiper-item-img {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+  }
+}
+.discover-swiper-item:nth-child(1) > .discover-swiper-item-img {
+  background-image: url("../../../assets/img/sign-up-swiper1.png");
+}
+.discover-swiper-item:nth-child(2) > .discover-swiper-item-img {
+  background-image: url("../../../assets/img/sign-up-swiper2.png");
+}
+
+
+.classification-containers {
+  width: 100px;
+  height: 30px;
+  background: #E4E4E4;
+  border-radius: 15px;
+  margin-top: 14px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  .option-button {
+    width: 50%;
+    height: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #999999;
+    padding-top: 5px;
+    box-sizing: border-box;
+  }
+  .button-hover {
+    background-color: #FEB70F;
+    color: $color-bg;
+    border-radius: 15px;
+  }
+}
+
+.competition-list-container {
+  width: 100%;
+  height: auto;
+  background-color: $color-bg;
+  margin-top: 2px;
+  .competition-list-item:nth-child(1) > .competition-theme-picture {
+    background-image: url("../../../assets/img/sign-up-poster1.png");
+  }
+  .competition-list-item:nth-child(2) > .competition-theme-picture {
+    background-image: url("../../../assets/img/sign-up-poster2.png");
+  }
+  .competition-list-item:nth-child(3) > .competition-theme-picture {
+    background-image: url("../../../assets/img/sign-up-poster3.png");
+  }
+  .competition-list-item:nth-child(4) > .competition-theme-picture {
+    background-image: url("../../../assets/img/sign-up-poster4.png");
+  }
+  .competition-list-item:nth-child(5) > .competition-theme-picture {
+    background-image: url("../../../assets/img/sign-up-poster5.png");
+  }
+  .competition-list-item:nth-child(6) > .competition-theme-picture {
+    background-image: url("../../../assets/img/sign-up-poster6.png");
+  }
+  .competition-list-item:nth-child(7) > .competition-theme-picture {
+    background-image: url("../../../assets/img/sign-up-poster7.png");
+  }
+  .competition-list-item:nth-child(8) > .competition-theme-picture {
+    background-image: url("../../../assets/img/sign-up-poster8.png");
+  }
+  .competition-list-item {
+    width: 347px;
+    height: 151px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.11);
+    border-radius: 10px;
+    margin-top: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+    .competition-theme-picture {
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 100% 100%;
+      width: 77px;
+      height: 120px;
+      border-radius: 5px;
+      margin-left: 12px;
+      margin-top: 16px;
+    }
+    .competition-theme-text-container {
+      width: 205px;
+      height: 110px;
+      margin-left: 15px;
+      margin-top: 17px;
+      .competition-theme-title {
+        height: 24px;
+        font-size: 17px;
+        font-weight: bold;
+        line-height: 24px;
+        color: #333333;
+        display: block;
+        text-align: left;
+      }
+      .competition-theme-content {
+        height: 34px;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 17px;
+        color: #999999;
+        overflow: hidden;
+        display: block;
+        text-align: left;
+        margin-top: 5px;
+      }
+      .competition-theme-deadline {
+        height: 14px;
+        font-size: 12px;
+        font-weight: bold;
+        line-height: 14px;
+        color: #333333;
+        overflow: hidden;
+        display: block;
+        text-align: left;
+        margin-top: 8px;
+      }
+      .competition-theme-organizer {
+        height: 14px;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 14px;
+        color: #333333;
+        overflow: hidden;
+        display: block;
+        text-align: left;
+        margin-top: 4px;
+      }
+    }
+    .sign-up-button {
+      width: 65px;
+      height: 23px;
+      border-radius: 5px;
+      font-size: 11px;
+      font-weight: bold;
+      line-height: 16px;
+      margin-right: 0;
+      box-sizing: border-box;
+      padding-top: 4px;
+      color: #FFFFFF;
+    }
+    .sign-up-enter-button {
+      background: #FEB70F;
+    }
+    .not-started-button {
+      background: #4F75B3;
+    }
+    .over-button {
+      background: #D4D4D4;
+    }
+  }
+}
+
+
+

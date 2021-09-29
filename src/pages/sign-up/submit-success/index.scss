@@ -1,0 +1,115 @@
+@import "../../../styles/variables";
+
+//NavigationBar
+.navigation-bar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 88px;
+  width: 375px;
+  background-color: $color-primary;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  .navigation-bar-return-icon {
+    background-image: url("../../../assets/icons/navigation-return.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-top: 54px;
+    margin-left: 16px;
+    background-size: 100% 100%;
+    text-align: center;
+    width: 12px;
+    height: 24px;
+  }
+  .navigation-bar-logo {
+    background-image: url("../../../assets/logo/logo.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-top: 44px;
+    margin-left: 131px;
+    background-size: 100% 100%;
+    text-align: center;
+    width: 58px;
+    height: 39px;
+  }
+}
+
+.page-section {
+  width: 100%;
+  height: 100vh;
+}
+
+//整体页面
+.discover {
+  background-color: $color-bg-bottom;
+}
+
+.page-section-spacing{
+  margin-top: 0;
+  text-align: center;
+}
+.scroll-view {
+  height: 100vh;
+  width: 100%;
+}
+
+//TabBar
+.foot-tab-bar {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: $sidebar-bottom-color;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 98px;
+  width: 100%;
+  border-radius: 28px 28px 0px 0px;
+  z-index: 1;
+  box-shadow: 0px 2px 28px rgba(0, 0, 0, 0.13);
+}
+.publish-button {
+  background-color: $color-blue-button;
+  color: $color-bg;
+  margin-top: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: bold;
+  width: 324px;
+  height: 48px;
+  border-radius: 26px;
+}
+
+.publish-success-img {
+  background-image: url("../../../assets/img/publish-success.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  width: 375px;
+  height: 178px;
+  margin-top: 243px;
+}
+.publish-success-text {
+  width: 100%;
+  height: 47px;
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 47px;
+  color: $color-primary;
+  text-shadow: 2px 1px 6px rgba(0, 0, 0, 0.16);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+
+
+
